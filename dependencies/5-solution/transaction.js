@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = class Transaction {
 	constructor(accountA, accountB, amount) {
 		this.accountA = accountA;

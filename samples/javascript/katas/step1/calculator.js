@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Exercise 4a - Test-Driven Development
  */

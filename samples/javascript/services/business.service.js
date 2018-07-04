@@ -1,4 +1,4 @@
-import {HttpIpEndPoint} from "./http-ip-end-point";
+import {HttpIpEndPoint} from './http-ip-end-point';
 
 /**
  * Dynamic Bound Service, test-friendly

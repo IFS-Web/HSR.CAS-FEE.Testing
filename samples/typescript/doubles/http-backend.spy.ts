@@ -8,7 +8,7 @@ export class HttpBackendSpy implements HttpBackend {
   }
   public enforceData(data: any[]): void {
   }
-  public loadData(async): Promise|any[] {
+  public loadData(async): Promise<any[]>|any[] {
     return this._onLoadData();
   }
 }

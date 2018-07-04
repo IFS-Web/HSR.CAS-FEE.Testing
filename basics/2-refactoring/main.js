@@ -1,4 +1,4 @@
-const BankAccount = require("./bank-account.js");
+const BankAccount = require('./bank-account.js');
 
 // class BankAccountController() { doActions() { ...
 const account = new BankAccount();

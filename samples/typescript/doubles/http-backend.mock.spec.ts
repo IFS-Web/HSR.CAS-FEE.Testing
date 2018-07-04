@@ -1,5 +1,5 @@
 import { BusinessService } from '../services/index';
-import {HttpBackendMock} from "./http-backend.mock";
+import { HttpBackendMock } from './http-backend.mock';
 
 describe('A BusinessService', function() {
   const SERVICE_DATA = [ 'a', 'b', 'c' ];

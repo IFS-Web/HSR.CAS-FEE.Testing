@@ -3,7 +3,8 @@
  *  - Set local calculator.js file as SUT.
  *  - All specs from folders
  *    * step1
- *    will run test with local transaction.js file.
+ *    * step2
+ *    will run test with local calculator.js file.
  */
 const Calculator = require(process.env.calculator = '../step3/calculator');
 

@@ -1,5 +1,5 @@
 import { BusinessService } from '../services/index';
-import { HttpBackendFake } from "./http-backend.fake";
+import { HttpBackendFake } from './http-backend.fake';
 
 describe('A BusinessService', function() {
   const SERVICE_DATA = [ 'a', 'b', 'c' ];

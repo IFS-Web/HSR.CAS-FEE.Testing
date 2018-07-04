@@ -5,10 +5,10 @@
  *    * 2-spec
  *    will run test with local transaction.js file.
  */
-process.env.transaction = "../3-implementation/transaction";
+process.env.transaction = '../3-implementation/transaction';
 
 /**
  * Load previously defined spec files.
  */
-const Spec = require("../2-spec/transaction.spec");
+const Spec = require('../2-spec/transaction.spec');
 //-end------------------ CAS FEE Test Infrastructure ------------------------\\

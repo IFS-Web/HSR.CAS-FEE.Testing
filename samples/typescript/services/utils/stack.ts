@@ -1,4 +1,4 @@
-import {environment} from '../../../environments/environment';
+import {environment} from 'src/environments/environment';
 export class Stack<T> {
   private _data: T[] = new Array<T>();
   get isEmpty(): boolean {

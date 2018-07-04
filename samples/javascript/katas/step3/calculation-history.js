@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Provides the basic interface to store/load data from/to the history.
  */

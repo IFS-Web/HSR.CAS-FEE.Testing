@@ -2,7 +2,7 @@
 
 module.exports = class BankAccount {
 	constructor() {
-		console.log("create account");
+		console.log('create account');
 		this.maximalWithdrawFactor = 0.25;
 		this.balance = 0;
 	}

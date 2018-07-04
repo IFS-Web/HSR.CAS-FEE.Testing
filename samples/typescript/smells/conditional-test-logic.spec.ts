@@ -15,7 +15,7 @@ describe('A BusinessService', function() {
     if (!backend.hasInMemoryData()) {
         backend.enforceData(expectedElements);
     }
-    expect(expectedElements).toBe(sut.getData());
+    expect(sut.getData()).toBe(expectedElements);
   });
 });
 

@@ -1,4 +1,4 @@
-import { HttpBackend } from "./http-backend";
+import { HttpBackend } from './http-backend';
 
 /**
  * IP End Point with $http reference.
