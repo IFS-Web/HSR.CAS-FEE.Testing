@@ -3,7 +3,7 @@
  *  - Set local transaction.js file as SUT.
  *  - All specs from folders
  *    * 3-spec
- *    will run test with local transaction.js file.
+ *    will run test with local bank-account.js file.
  */
 process.env.bankaccount = '../4-solution/bank-account';
 

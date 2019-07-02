@@ -19,7 +19,7 @@
 * **As a** `bank agent` **I want to** `create accounts` **so that** customers `can deposit and withdraw amounts`.
 * **As a** `bank customer` **I want to** `deposit amounts` **so that** I can `store my money`.
 * **As a** `bank customer` **I want to** `withdraw amounts` **so that** I `get back my stored money`.
-* **As a** `bank` **I want to** `prevent customers from overdrawing` their account **so that** I can `lower my risk`.
+* **As a** `bank` **I want to** `prevent customers from overdrawing (withdraw amount lower than 25% of balance)` their account **so that** I can `lower my risk`.
 
 
 ### Bank account test scenarios

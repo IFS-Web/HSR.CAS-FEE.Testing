@@ -17,8 +17,8 @@
 	account.balance
 	// 0
 
-	account.deposit(50);
-	// Deposit 50. Balance 50.
+	account.deposit(150);
+	// Deposit 150. Balance 150.
 	// true
 
 	account.withdraw(50);
@@ -26,7 +26,7 @@
 	// false
 
 	account.withdraw(10);
-	// Withdraw 10. Balance 40.
+	// Withdraw 10. Balance 140.
 	// true
 	```
 
@@ -67,5 +67,3 @@
 ## How to do it better?
 
 Test Driven Design: Write **tests/specs** first, then implement the functionality.
-
--> [Test First exercise](../)
