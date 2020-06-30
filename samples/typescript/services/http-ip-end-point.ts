@@ -25,6 +25,8 @@ export class HttpIpEndPoint implements HttpBackend {
                 return new Promise((resolve, reject) => {
                     resolve(this.data || [ ]);
                 });
+            } else {
+                // $.ajax( { ... } ).then( -> fire event, Promise, Observable, ... )
             }
         }
         return this.data || [ ];
