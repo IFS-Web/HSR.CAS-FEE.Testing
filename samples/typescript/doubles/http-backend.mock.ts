@@ -2,21 +2,21 @@ import { HttpBackend } from '../services/index';
 
 // better way to do this: use Jasmine [spyOn], TypeMoq or JsMockito
 export class HttpBackendMock implements HttpBackend {
-  private _loadDataCallCount = 0;
-  private _data: any[];
+  private loadDataCallCount = 0;
+  private data: any[] = [ ];
   public hasInMemoryData(): boolean {
     return true;
   }
   public enforceData(data: any[]): void {
-    this._data = data;
+    this.data = data;
   }
-  public loadData(async): Promise<any[]>|any[] {
+  public loadData(async: boolean): Promise<any[]>|any[] {
     expect(async).toBeFalsy();
-    ++this._loadDataCallCount;
-    return this._data;
+    ++this.loadDataCallCount;
+    return this.data;
   }
-  public verify(data): void {
-    expect(this._data).toEqual(data);
-    expect(this._loadDataCallCount).toBe(1);
+  public verify(data: any[]): void {
+    expect(this.data).toEqual(data);
+    expect(this.loadDataCallCount).toBe(1);
   }
 }

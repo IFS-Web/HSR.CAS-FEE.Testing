@@ -11,7 +11,7 @@ describe('A BusinessService', function() {
     testMock = {
       hasInMemoryData() { return true; },
       enforceData(data: any[]) { },
-      loadData(async: boolean) { return null; }
+      loadData(async: boolean) { return [ ]; }
     };
     loadDataSpy = spyOn(testMock, 'loadData').and.returnValue(SERVICE_DATA);
     sut = new BusinessService(testMock);
@@ -20,7 +20,7 @@ describe('A BusinessService', function() {
   it('should accommodate elements (provided by spyOn).', function() {
     const loadedData = sut.getData();
     expect(loadedData).toEqual(SERVICE_DATA);
-    expect(loadDataSpy.calls.first()[0]).toBeFalsy();
+    expect(loadDataSpy.calls.first().args[0]).toBeFalsy();
   });
 });
 

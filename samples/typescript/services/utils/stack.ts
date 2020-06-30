@@ -1,20 +1,24 @@
-import {environment} from 'src/environments/environment';
+
+const environment = { // variable given by the underlying framework/lib
+  production: false
+};
+
 export class Stack<T> {
-  private _data: T[] = new Array<T>();
+  private data: T[] = new Array<T>();
   get isEmpty(): boolean {
-    return !this._data.length;
+    return !this.data.length;
   }
   push(toPush: T): void {
-    this._data.push(toPush);
+    this.data.push(toPush);
   }
   clear(): void {
-    this._data = [];
+    this.data = [];
   }
-  pop(): T {
+  pop(): T|undefined|null {
     if (!this.isEmpty) {
-      return this._data.pop();
+      return this.data.pop();
     }
-    if (environment.production) {
+    if (environment && environment.production) {
       return null;
     } else {
       return void 0;
