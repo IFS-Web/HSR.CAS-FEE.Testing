@@ -1,5 +1,22 @@
 const TransactionManager = require('./transaction-manager');
 
+// Given 'A new transaction manager'
+//  then 'should be empty when created'
+//  then 'should contain a transaction when newly added''
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- TODO (DEMO)
+
 describe('A new transaction manager', function() {
     let transactionMgr;
     beforeEach(function() {
@@ -16,3 +33,5 @@ describe('A new transaction manager', function() {
         expect(transactionMgr.transactions.length).toBe(1);
     });
 });
+
+ */

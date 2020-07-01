@@ -1,5 +1,21 @@
 module.exports = class TransactionManager {
+    constructor() {
+    }
+};
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- TODO (DEMO)
     constructor() {
         this.transactions = [ ];
     }
@@ -7,4 +23,4 @@ module.exports = class TransactionManager {
     addTransaction(newTransaction) {
         this.transactions.push(newTransaction);
     }
-};
+ */
