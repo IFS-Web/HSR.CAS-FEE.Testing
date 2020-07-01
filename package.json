@@ -4,10 +4,10 @@
   "description": "Learn how to test your application with jasmine",
   "main": "index.js",
   "scripts": {
-    "jasmine": "babel-node \"test-runner.js\"",
+    "jasmine": "npm run test",
     "samples": "babel-node \"test-runner.js\" samples\\javascript",
     "samples-ts": "jasmine-ts --config=jasmine-ts.json",
-    "test": "babel-node \"test-runner.js\"",
+    "test": "npm run samples && npm run test-basics-solution && npm run test-deps-solution",
     "test-basics": "babel-node \"test-runner.js\" basics",
     "test-basics-solution": "babel-node \"test-runner.js\" basics\\4-solution",
     "test-deps": "babel-node \"test-runner.js\" dependencies",
