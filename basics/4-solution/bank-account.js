@@ -12,7 +12,7 @@ module.exports = class BankAccount {
 	}
 
 	withdraw(amount) {
-		if(!this.hasTooLessCredit(amount)) {
+		if (amount > 0 && !this.hasTooLessCredit(amount)) {
 			this.balance -= amount;
 			return true;
 		} else {

@@ -50,10 +50,10 @@
 	```
 	* Alternativ können Sie das [Jasmine WebStorm Plugin](https://plugins.jetbrains.com/plugin/10449-jasmine) verwenden. Eine vollständige Installationsanleitung finden Sie unter [jetbrains.com/help](https://www.jetbrains.com/help/webstorm/installing-updating-and-uninstalling-repository-plugins.html).
 	* Weiterhin enthält das package.json diverse vordefinierte run-script Kommandos:
-	    * ```npm run test-basics``` Führt sämtliche Unit Tests im Ordner basics aus.
-	    * ```npm run test-basics-solution``` Führt sämtliche Unit Tests im Ordner basics aus.
-	    * ```npm run test-deps``` Führt sämtliche Unit Tests im Ordner dependencies aus.
-	    * ```npm run test-deps-solution``` Führt sämtliche Unit Tests im Ordner dependencies aus.
+	    * ```npm run test-basics``` Führt sämtliche Unit Tests im Ordner ```basics``` aus.
+	    * ```npm run test-basics-solution``` Führt `die` Unit Tests im Ordner ```basics\4-solution``` aus.
+	    * ```npm run test-deps``` Führt sämtliche Unit Tests im Ordner ```dependencies``` aus.
+	    * ```npm run test-deps-solution``` Führt die Unit Tests im Ordner ```dependencies\5-solution``` aus.
 
 6. Die Tests sollten nun fehlschlagen (was wurde beim Refactoring kaputt gemacht?).
 7. Beheben Sie das Problem mit dem fehlerhaften Statement.
@@ -62,8 +62,8 @@
 	**Weiterführende Übungen:**
 9. Erweitern Sie die Tests (```bank-account.spec.js```) um den folgenden Testfall:
 ```javascript
-	describe "A bank account of with balance of 100$"
-		it … "should return true when withdraw succeeded"
+	describe "A bank account with balance of 100$"
+		it … "should return false when withdraw of balance lower than or equals 0$."
 ```
 10. Fügen Sie im ```bank-account.js``` die entsprechende Logik dazu.
 11. Wie wird dieses Vorgehen (Schritte 9-10)  genannt?
@@ -71,7 +71,7 @@
 
 ## Solution
 
-* Test-Spezifikationen: [3-spec/bank-account.spec.js](./3-spec/bank-account.spec.js)
+* Test-Spezifikationen: [4-solution/bank-account.spec.js](./4-solution/bank-account.spec.js)
 * `Bank account` Logik: [4-solution/bank-account.js](./4-solution/bank-account.js)
 
 ### process.env.bankaccount

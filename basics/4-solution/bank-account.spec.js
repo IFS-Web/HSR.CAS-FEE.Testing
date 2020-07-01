@@ -24,13 +24,13 @@ const BankAccount = require('./bank-account');
  */
  
  // 100$ bank account test suite
-describe('A bank account of with balance of 100$', function() {
+describe('A bank account with balance of 100$', function() {
 	beforeEach(function() {
 		this.account = new BankAccount();
 		this.account.balance = 100;
 	});
 
-	it('should return true when withdraw succeeded', function() {
-		expect(this.account.withdraw(10)).toBeTruthy();
+	it('should return false when withdraw of balance lower than or equals 0$', function() {
+		expect(this.account.withdraw(0)).toBeFalse();
 	});
 });

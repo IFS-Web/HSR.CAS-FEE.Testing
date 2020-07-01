@@ -4,7 +4,7 @@
   "description": "Learn how to test your application with jasmine",
   "main": "index.js",
   "scripts": {
-    "jasmine": "npm run test",
+    "jasmine": "babel-node \"test-runner.js\"",
     "samples": "babel-node \"test-runner.js\" samples\\javascript",
     "samples-ts": "jasmine-ts --config=jasmine-ts.json",
     "test": "npm run samples && npm run test-basics-solution && npm run test-deps-solution",
