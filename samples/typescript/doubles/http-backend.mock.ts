@@ -1,4 +1,4 @@
-import { HttpBackend } from '../services/index';
+import { HttpBackend } from '../services';
 
 // better way to do this: use Jasmine [spyOn], TypeMoq or JsMockito
 export class HttpBackendMock implements HttpBackend {

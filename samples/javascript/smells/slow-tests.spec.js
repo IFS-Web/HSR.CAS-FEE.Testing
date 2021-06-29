@@ -1,4 +1,4 @@
-import { HttpIpEndPoint, BusinessService } from '../services/index';
+import { HttpIpEndPoint, BusinessService } from '../services';
 
 describe('A BusinessService', function() {
   let sut;

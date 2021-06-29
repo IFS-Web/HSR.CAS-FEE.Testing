@@ -1,4 +1,4 @@
-import { HttpBusinessService } from '../services/index';
+import { HttpBusinessService } from '../services';
 
 describe('A HttpBusinessService', function() {
     let sut: HttpBusinessService;
@@ -7,10 +7,10 @@ describe('A HttpBusinessService', function() {
         sut = new HttpBusinessService();
     });
 
-    it('should return expected server-side data.', function() {
+    it('should return expected server-side data.', async function() {
         // this isn't a unit test, moreover it tends to integration test
         // -> you should 'double' the service call
-        expect(sut.getData()).toEqual( /* data provided by the server (??) */ [ ]);
+        expect(await sut.getData()).toEqual( /* data provided by the server (??) */ [ ]);
     });
 });
 

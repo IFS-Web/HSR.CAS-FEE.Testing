@@ -1,4 +1,4 @@
-import { Stack } from '../services/utils/index';
+import { Stack } from '../services';
 
 describe('A Stack with initial data', function() {
 

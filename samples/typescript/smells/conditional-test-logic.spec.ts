@@ -1,5 +1,5 @@
-import { HttpBackendFake } from '../doubles/index';
-import { BusinessService } from '../services/index';
+import { HttpBackendFake } from '../doubles';
+import { BusinessService } from '../services';
 
 describe('A BusinessService', function() {
   let sut: BusinessService;
@@ -10,12 +10,12 @@ describe('A BusinessService', function() {
     sut = new BusinessService(backend);
   });
 
-  it('should load and accommodate elements.', function() {
+  it('should load and accommodate elements.', async function() {
     const expectedElements: any[] = [ 'a', 'b', 'c' ];
     if (!backend.hasInMemoryData()) {
         backend.enforceData(expectedElements);
     }
-    expect(sut.getData()).toBe(expectedElements);
+    expect(await sut.getData()).toBe(expectedElements);
   });
 });
 

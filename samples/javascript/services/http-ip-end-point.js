@@ -23,12 +23,12 @@ export class HttpIpEndPoint extends HttpBackend {
   loadData(dataAsync) {
     if (!this.data) { // cache data on client-side
         if (dataAsync) {
-            // $.ajax( { url: this.url, ... } ).then( -> fire event, Promise, Observable, ... )
+            // fetch( this.url, ... ).then( -> fire event, Promise, Observable, ... )
             return new Promise((resolve, reject) => {
               resolve(null);
             });
         } else {
-            // $.ajax( { ... } ).then( -> fire event, Promise, Observable, ... )
+            // fetch( { ... } ).then( -> fire event, Promise, Observable, ... )
             return this.data;
         }
     }

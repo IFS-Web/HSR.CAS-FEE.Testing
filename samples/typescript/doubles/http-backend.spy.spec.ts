@@ -1,4 +1,4 @@
-import { BusinessService } from '../services/index';
+import { BusinessService } from '../services';
 import { HttpBackendSpy } from './http-backend.spy';
 
 describe('A BusinessService', function() {

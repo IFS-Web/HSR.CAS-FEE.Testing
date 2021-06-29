@@ -1,4 +1,4 @@
-import { BusinessService, HttpBackend } from '../services/index';
+import { BusinessService, HttpBackend } from '../services';
 
 describe('A BusinessService', function() {
   const SERVICE_DATA = [ 'a', 'b', 'c' ];

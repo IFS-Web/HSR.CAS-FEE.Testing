@@ -1,4 +1,4 @@
-import { BusinessService } from '../services/index';
+import { BusinessService } from '../services';
 import { HttpBackendFake } from './http-backend.fake';
 
 describe('A BusinessService', function() {
@@ -11,8 +11,8 @@ describe('A BusinessService', function() {
     sut = new BusinessService(testFake);
   });
 
-  it('should accommodate elements (provided by fake).', function() {
-    expect(sut.getData()).toEqual(SERVICE_DATA);
+  it('should accommodate elements (provided by fake).', async function() {
+    expect(await sut.getData()).toEqual(SERVICE_DATA);
   });
 });
 

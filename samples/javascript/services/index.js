@@ -1,4 +1,4 @@
-export * from './utils/index';
+export * from './utils';
 
 export * from './business.service';
 export * from './http-backend';

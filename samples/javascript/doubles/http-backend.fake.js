@@ -1,4 +1,4 @@
-import { HttpBackend } from '../services/index';
+import { HttpBackend } from '../services';
 
 export class HttpBackendFake extends HttpBackend {
   constructor(dataInput) {

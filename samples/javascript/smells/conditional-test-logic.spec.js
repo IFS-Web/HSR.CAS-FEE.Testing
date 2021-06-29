@@ -1,5 +1,5 @@
-import { BusinessService } from '../services/index';
-import { HttpBackendFake } from '../doubles/index';
+import { BusinessService } from '../services';
+import { HttpBackendFake } from '../doubles';
 
 describe('A BusinessService', function() {
   let sut;

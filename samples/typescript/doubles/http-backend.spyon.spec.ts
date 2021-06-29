@@ -1,4 +1,4 @@
-import { BusinessService, HttpBackend } from '../services/index';
+import { BusinessService, HttpBackend } from '../services';
 import Spy = jasmine.Spy;
 
 describe('A BusinessService', function() {
