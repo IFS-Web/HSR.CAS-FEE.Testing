@@ -24,7 +24,7 @@
 
 #### Scenario *New transaction*
 **describe**… "A new transaction of 25$ (account A 100$ / account B 25$)"
-* it … "has transaction date 2016-11-22T09:49:51.010Z"
+* it … "has transaction date 2021-06-22T09:49:51.010Z"
 * it … "has an amount of 25$"
 * it … "is not yet completed"
  
@@ -40,14 +40,14 @@ Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressour
 
 **Tip:** Lesen Sie zuerst die ganze Aufgabe durch, folgen Sie anschliessend den Schritten 1-7.
 
-1. Schreiben Sie die Test-Spezifikationen (Jasmine Tests) fürs Szenario ```A new transaction of 25$ (account A 100$ / account B 25$)```. Sie finden die Vorlagen im Ordner `dependencies\1-initial`.
+1. Schreiben Sie die Test-Spezifikationen (Jasmine Tests) fürs Szenario *New transaction*: ```A new transaction of 25$ (account A 100$ / account B 25$)...``` (siehe oberhalb). Sie finden die Vorlagen im Ordner `dependencies\1-initial`.
 	* Um Werte/Referenzen zu überprüfen, verwenden Sie ```toBe()```; ```toEqual()``` vergleicht zusätzlich die Inhalte von Objekten und Arrays (Properties/Indexes).
 	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn([object], '[property]')``` (z.B. ```spyOn(Date, 'now')```) und ```and.returnValue()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter [jasmine.github.io](https://jasmine.github.io/api/edge/Spy.html).
-	* Legen Sie eine Fake-Klasse für das DoC ```BankAccount``` an. Verwenden Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
+	* Die Klasse ```BankAccount``` entspricht einem DoC. Legen Sie also eine Fake-Klasse für das DoC ```BankAccount``` an. Verwenden Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
 	* Die Lösungen zur Aufgabe 1 finden Sie unter ```2-spec/transaction.spec.js```.
 2. Führen Sie die Tests mittels Jasmine aus (analog [bascis](../basics/README.md#exercise--jasmine-installieren-und-ausführen)-Aufgabe), zum Beispiel:
 	```shell
-	npm run jasmine dependencies/2-spec
+	npm run jasmine dependencies/1-initial
 	```
 3. Implementieren Sie nun die Initialisierung/Konstruktorlogik der Transaction-Klasse gemäss der Scenario-Vorgaben oben.
 4. Nun sollten die Tests aus der Aufgabe 1 ohne Fehler durchlaufen.

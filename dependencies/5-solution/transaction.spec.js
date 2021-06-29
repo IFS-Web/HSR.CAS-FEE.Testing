@@ -22,6 +22,6 @@ const Spec = require('../4-spec-completion/transaction.spec');
  * 4. check if the tests are passing
  * 5. Do the whole iteration for the next SMALL feature
  *
- * So we can implement, test, version & integrate iterative
+ * So we can implement, test, version & integrate iterative in small steps
  * -> reduces errors, improves quality, creates a clean history.
  */
