@@ -26,13 +26,13 @@
 
 #### Scenario *New account*
 **describe**… "A new bank account"
-* it … "is initialized by a balance of 0$"
+* it … "is initialized by a balance of $0"
 * it … "should not allow a withdraw without balance"
-* it … "should have a balance of 50$ after a deposit of 50$"
+* it … "should have a balance of $50 after a deposit of $50"
  
-**describe**… "A bank account of balance larger than 0$ (amount of 50$)"
-* it … "should not allow to withdraw amounts larger than 25% [50$ => 13$ (26%)]"
-* it … "should allow to withdraw amounts lower than 25% [50$ => 12.5$ (25%)]"
+**describe**… "A bank account of balance larger than $0 (amount of $50)"
+* it … "should not allow to withdraw amounts larger than 25% [$50 => $13 (26%)]"
+* it … "should allow to withdraw amounts lower than 25% [$50 => $12.5 (25%)]"
 
 
 ## Exercise / Jasmine installieren und ausführen
@@ -62,8 +62,8 @@
 	**Weiterführende Übungen:**
 9. Erweitern Sie die Tests (```bank-account.spec.js```) um den folgenden Testfall:
 ```javascript
-	describe "A bank account with balance of 100$"
-		it … "should return false when withdraw of balance lower than or equals 0$."
+	describe "A bank account with balance of $100"
+		it … "should return false when withdraw of balance lower than or equals $0."
 ```
 10. Fügen Sie im ```bank-account.js``` die entsprechende Logik dazu.
 11. Wie wird dieses Vorgehen (Schritte 9-10)  genannt?

@@ -23,24 +23,24 @@
 ### Transaction test scenarios
 
 #### Scenario *New transaction*
-**describe**… "A new transaction of 25$ (account A 100$ / account B 25$)"
-* it … "has transaction date 2021-06-22T09:49:51.010Z"
-* it … "has an amount of 25$"
+**describe**… "A new transaction of $25 (from account A $100 to account B $25)"
+* it … "has an amount of $25"
 * it … "is not yet completed"
- 
+* it … "has transaction date 2021-06-22T09:49:51.010Z"
+
 * **describe**… "when executed"
-	* it … "withdraws 25$ from account A"
-	* it … "deposits 25$ to account B"
-	* it … "is completed"
+    * it … "withdraws $25 from account A"
+    * it … "deposits $25 to account B"
+    * it … "is completed"
 
 
 ## Exercise
 
-Komponenten, welche von externen, langsamen oder nicht immer verfügbare Ressourcen (Netzwerk, Datenbanken, usw.) abhängen (so genannte depended-on component [DoC]), sollten in Unit Tests nicht verwendet werden. Somit bleiben die Unit Tests schnell und testen die effektive Logik des Programms. Test Doubles (fakes/spies/mocks/...) werden anstatt der DoCs eingeführt, um Abhängigkeiten zu externen Komponenten zu vermeiden. Im Szenario oben entspricht der BankAccount A und B solch einem externen DoC-System.
+Komponenten, welche von externen, langsamen oder nicht immer verfügbaren Ressourcen (Netzwerk, Datenbanken, usw.) abhängen (so genannte depended-on component [DoC]), sollten in Unit Tests nicht verwendet werden. Somit bleiben die Unit Tests schnell und testen die effektive Logik des Programms. Test Doubles (fakes/spies/mocks/...) werden anstatt der DoCs eingeführt, um Abhängigkeiten zu externen Komponenten zu vermeiden. Im Szenario oben entspricht der BankAccount A und B solch einem externen DoC-System.
 
 **Tip:** Lesen Sie zuerst die ganze Aufgabe durch, folgen Sie anschliessend den Schritten 1-7.
 
-1. Schreiben Sie die Test-Spezifikationen (Jasmine Tests) fürs Szenario *New transaction*: ```A new transaction of 25$ (account A 100$ / account B 25$)...``` (siehe oberhalb). Sie finden die Vorlagen im Ordner `dependencies\1-initial`.
+1. Schreiben Sie die Test-Spezifikationen (Jasmine Tests) fürs Szenario *New transaction*: ```A new transaction of $25 (account A $100 / account B $25)...``` (siehe oberhalb). Sie finden die Vorlagen im Ordner `dependencies\1-initial`.
 	* Um Werte/Referenzen zu überprüfen, verwenden Sie ```toBe()```; ```toEqual()``` vergleicht zusätzlich die Inhalte von Objekten und Arrays (Properties/Indexes).
 	* Um native APIs, welche immer andere Resultate liefern, testbar zu machen, kann die Jasmine-Funktion ```spyOn([object], '[property]')``` (z.B. ```spyOn(Date, 'now')```) und ```and.returnValue()``` verwendet werden. Mehr Informationen zu diesen Funktionen finden Sie unter [jasmine.github.io](https://jasmine.github.io/api/edge/Spy.html).
 	* Die Klasse ```BankAccount``` entspricht einem DoC. Legen Sie also eine Fake-Klasse für das DoC ```BankAccount``` an. Verwenden Sie dieselbe API (withdraw/deposit) wie in den Basics-Aufgaben.
